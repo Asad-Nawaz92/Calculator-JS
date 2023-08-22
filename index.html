@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <input readonly type="text" id="inp">
+        </div>
+        <br>
+        <div>
+            <button class="opt" onclick="clrall()">AC</button>
+            <button class="opt" onclick="clr()">DEL</button>
+            <button class="opt" onclick="calculator('%')">%</button>
+            <button class="opt" onclick="calculator('/')">/</button>
+        </div>
+        <div>
+            <button class="num" onclick="calculator(7)">7</button>
+            <button class="num" onclick="calculator(8)">8</button>
+            <button class="num" onclick="calculator(9)">9</button>
+            <button class="opt" onclick="calculator('*')">X</button>
+        </div>
+
+        <div>
+            <button class="num" onclick="calculator(4)">4</button>
+            <button class="num" onclick="calculator(5)">5</button>
+            <button class="num" onclick="calculator(6)">6</button>
+            <button class="opt" onclick="calculator('-')">-</button>
+        </div>
+        <div>
+            <button class="num" onclick="calculator(1)">1</button>
+            <button class="num" onclick="calculator(2)">2</button>
+            <button class="num" onclick="calculator(3)">3</button>
+            <button class="opt" onclick="calculator('+')">+</button>
+        </div>
+        <div>
+            <button id="zero_btn" onclick="calculator(0)">0</button>
+            <button class="num" onclick="calculator('.')">.</button>
+            <button class="opt" onclick="eq()">=</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
